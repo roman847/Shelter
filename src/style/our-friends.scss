@@ -1,0 +1,229 @@
+$gray: #cdcdcd;
+$pink: #f1cdb3;
+
+.container-our__friends {
+  width: 100%;
+  background: #f6f6f6;
+  box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+    padding: 40px 0px;
+  }
+  .wrapper-our__friends {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 145px;
+    @media screen and (max-width: 768px) {
+      padding: 0px 94px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 0px 10px;
+    }
+    h3 {
+      margin: 0 auto;
+      max-width: 400px;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        //styleName: h3;
+        font-family: Georgia;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 0px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 300px;
+        font-family: Georgia;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.06em;
+        text-align: center;
+      }
+    }
+    .btn-get {
+      display: block;
+      margin: 0 auto;
+      max-width: 260px;
+      color: #292929;
+      // margin-top: -25px;
+      @media screen and (max-width: 767px) {
+      }
+      @media screen and (max-width: 768px) {
+        width: 260px;
+        margin-top: 0px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-top: -5px;
+        padding: 15px 35px;
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 90px;
+    margin-top: 55px;
+
+    @media screen and (max-width: 480px) {
+      margin-top: 40px;
+    }
+    .swiper-slide {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      // max-width: 270px;
+      // height: 435px;
+      // gap: 0px 35px;
+      // justify-content: space-between;
+      background-color: #fafafa;
+      cursor: pointer;
+      &:hover {
+        .btn-white {
+          background-color: $pink;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: 10px;
+        // gap: 0px 25px;
+      }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 50px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-top: 0px;
+        width: 100%;
+      }
+      figure {
+        width: 100%;
+        figcaption {
+          margin: 26px 0px 30px 0px;
+          font-family: Georgia;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0.06em;
+          text-align: center;
+          @media screen and (max-width: 768px) {
+            margin-top: 25px;
+            margin-bottom: 0;
+          }
+          @media screen and (max-width: 480px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+          @media screen and (max-width: 767px) {
+            margin-top: 20px;
+          }
+          @media screen and (max-width: 480px) {
+            display: block;
+            margin: 0 auto;
+
+            width: 270px;
+            height: 270px;
+          }
+        }
+      }
+      .btn-white {
+        display: block;
+        margin: 0 auto;
+        // margin-top: 15px;
+        width: 70%;
+        height: 52px;
+        font-family: Georgia;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        border-radius: 100px;
+        border: 2px solid $pink;
+        background-color: #fafafa;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: $pink;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 70%;
+          margin-top: 25px;
+        }
+        @media screen and (max-width: 767px) {
+          width: 55%;
+          margin-top: 0;
+        }
+        @media screen and (max-width: 480px) {
+          width: 187px;
+          height: 52px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .btn-our__friends {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    transition: 0.5s;
+    color: #292929;
+    text-align: center;
+
+    cursor: pointer;
+    &:hover {
+      background-color: $pink;
+    }
+  }
+  .prev {
+    position: absolute;
+    top: calc(50%);
+    left: 4%;
+    z-index: 2;
+    z-index: 3;
+    @media screen and (max-width: 767px) {
+      top: 87%;
+      left: 31%;
+    }
+    @media screen and (max-width: 610px) {
+      top: 83%;
+      left: 31%;
+    }
+    @media screen and (max-width: 480px) {
+      top: 79%;
+      left: 21%;
+    }
+  }
+  .next {
+    position: absolute;
+    top: calc(50%);
+    right: 4%;
+    z-index: 3;
+    @media screen and (max-width: 767px) {
+      top: 87%;
+      right: 31%;
+    }
+    @media screen and (max-width: 610px) {
+      top: 83%;
+      right: 31%;
+    }
+    @media screen and (max-width: 480px) {
+      top: 79%;
+      right: 21%;
+    }
+  }
+}

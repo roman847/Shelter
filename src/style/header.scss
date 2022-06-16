@@ -1,0 +1,108 @@
+$gray: #cdcdcd;
+.container-header {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+    padding: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 30px 10px;
+  }
+  @media screen and (max-width: 334px) {
+    padding: 30px 10px;
+  }
+  .header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    @media screen and (max-width: 650px) {
+      width: 340px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 320px;
+    }
+    .logo-block {
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      z-index: 11;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+      h1 {
+        font-family: Georgia;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        color: #f1cdb3;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
+        @media screen and (max-width: 650px) {
+          // letter-spacing: 0;
+          width: 100%;
+        }
+      }
+      p {
+        font-family: Arial;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+    .header-nav {
+      width: 445px;
+      @media screen and (max-width: 717px) {
+        width: 65%;
+      }
+      .nav-list {
+        display: flex;
+        gap: 35px;
+        @media screen and (max-width: 768px) {
+          gap: 15px;
+          margin-left: auto;
+          justify-content: space-between;
+        }
+        @media screen and (max-width: 720px) {
+          justify-content: space-around;
+        }
+        .nav-item a {
+          font-family: Arial;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: $gray;
+          text-decoration: none;
+          transition: 0.3s;
+          &:hover {
+            color: #fff;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
