@@ -1,0 +1,164 @@
+$pink: #f1cdb3;
+footer {
+  width: 100%;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(0deg, #211f20, #211f20);
+}
+.container-footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 0px 40px;
+
+  @media screen and (max-width: 1279px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px 60px;
+    padding: 30px 10px 0px 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    // padding-top: 12px;
+    gap: 0px;
+    // height: 805px;
+  }
+  h3 {
+    width: 280px;
+    color: #fff;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+    }
+    @media screen and (max-width: 480px) {
+      margin-top: 0px;
+      font-family: Georgia;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.06em;
+      text-align: center;
+    }
+  }
+  .wrapper-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+    @media screen and (max-width: 1279px) {
+      gap: 50px;
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      // gap: 50px;
+      gap: 0px;
+    }
+  }
+  .contacts {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 480px) {
+      gap: 22px;
+      justify-content: center;
+      margin-bottom: 0px;
+    }
+
+    a {
+      font-family: Georgia;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0.06em;
+      text-align: left;
+      color: $pink;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .img-footer__block {
+    height: 310px;
+    max-width: 300px;
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 480px) {
+      height: auto;
+      margin-top: 40px;
+    }
+    img {
+      width: 300px;
+      height: 310px;
+      @media screen and (max-width: 480px) {
+        display: block;
+        margin-top: auto;
+        width: 260px;
+        height: auto;
+      }
+    }
+  }
+  .contact-block {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    gap: 43px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      margin-left: -12px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+    .phone-block {
+      @media screen and (max-width: 480px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .adress-block {
+    // margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding: 16px 0px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-left: 0px;
+    }
+    p {
+      margin-top: 2px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-top: 10px;
+      // gap: 37px;
+      // justify-content: left;
+      // align-items: center;
+    }
+    .london-adress {
+      @media screen and (max-width: 480px) {
+        margin-right: auto;
+        margin-top: 10px;
+      }
+    }
+    .boston-adress {
+      @media screen and (max-width: 480px) {
+        margin-top: 5px;
+      }
+    }
+  }
+}
